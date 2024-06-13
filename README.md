@@ -52,7 +52,5 @@ HelperFunctions:
 ExportDoseData.py
    - Brukt til å eksportere dose- og volum matriser fra RayStation
 
-ExportDoseMatrixAndXYZPositions.py
-
 InterpolateDoseInPoints:
 - Brukt til å regne ut dosen i punktene som ble funnet i FindSamplePoints.py. 
