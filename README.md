@@ -43,6 +43,7 @@ HelperFunctions:
 ## Filer kjørt i RayStation: 
 
 ExportDoseData.py
+   - Brukt til å eksportere dose- og volum matriser fra RayStation
 
 ExportDoseMatrixAndXYZPositions.py
 
