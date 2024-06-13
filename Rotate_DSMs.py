@@ -4,7 +4,7 @@ This was done in order to create average DSMs for each toxicity group
 """
 
 import numpy as np
-from extrahelpers import rotateHorizontally, rotateVertically, collectCSVData, clustermask, getCentroidofMask
+from HelperFunctions import rotateHorizontally, rotateVertically, collectCSVData, clustermask, getCentroidofMask
 from skimage.transform import resize
 
 from Parameters import grad_01, grad_2, grad_3, armA, armB, All_patients
