@@ -36,6 +36,13 @@ SaveDSMFeatures:
    - Brukt til å hente ut DSM parametrene.
    - Hentet ut på orginiale EQD2 dosekart.
 
+MaskCheck:
+   - Brukt til å lage dose masker for 50% av maksdosen funnet i dosekartet for å finne
+     antall sammenhengende dose regioner i dosekartene.
+
+PlotDSMParameters:
+   - Brukt til å lage bootstrap konfidensintervaller og plotte gjennomsnittlig verdi for hver toks gruppe.
+
 HelperFunctions: 
    - Mange av funksjonene er lagret her.
    - Noen av funksjonene er hentet fra Patrick HM, Kildea J. Technical note: rtdsm-An open-source software for radiotherapy dose-surface map generation and analysis. Med Phys. 2022 Nov;49(11):7327-7335. doi: 10.1002/mp.15900. Epub 2022 Aug 8. PMID: 35912447. 
