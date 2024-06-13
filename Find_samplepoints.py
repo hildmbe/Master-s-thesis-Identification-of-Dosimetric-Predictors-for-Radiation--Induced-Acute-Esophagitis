@@ -11,11 +11,9 @@ points will be found in file 'InterpolateDoseInPoints.py'
 import numpy as np
 import os
 from shapely.geometry import LineString, Point
-import matplotlib.pyplot as plt 
-from mpl_toolkits.mplot3d import Axes3D 
 import pyvista as pv
 import math
-from extrahelpers import collectCSVData, get_pointcloud
+from HelperFunctions import collectCSVData, get_pointcloud
 from Parameters import All_patients, grad_01, grad_2, grad_3, armA, armB
 
 for pat_number in All_patients:
