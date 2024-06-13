@@ -1,7 +1,8 @@
-
+"""File used to visualize dose masks created for a dose level of 50% of the maximum 
+dose found in the DSM. Used to find the number of connected dose regions in the DSM. """
 
 import numpy as np
-from extrahelpers import get_pointcloud
+from HelperFunctions import get_pointcloud
 from Parameters import grad_01, grad_2, grad_3, armA, armB, All_patients
 import os
 
