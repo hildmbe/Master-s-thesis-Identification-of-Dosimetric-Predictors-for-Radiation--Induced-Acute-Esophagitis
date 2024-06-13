@@ -138,12 +138,6 @@ def DSM_features(DoseMask, slice_thickness):
     Features = {'area': area, 'length_full_coverage': length_full_coverage, 'mean_grade_of_circ':mean_grade_of_circ, 'grade_of_circ_max': max_grade_of_circ_1cm, 'length': length, 'grade_of_circ_max_concecutive': np.max(grade_of_circ_1cm_consecutive)}
     return Features
 
-def getCentroidofMask(DoseMask):
-    locs = np.transpose(np.nonzero(DoseMask))
-    M = moments(DoseMask)
-    centroid = (M[0,1]/M[0,0], M[1,0]/M[0,0]) 
-    return centroid
-
 #####################################################################
 
 # Functions from Patrick HM, Kildea J. Technical note: rtdsm-An open-source software for radiotherapy
@@ -378,3 +372,9 @@ def clustermask(DSM,value,connectivity=1):
     else:
         print("WARNING! No voxels greater than",value,"Gy exist in the DSM. Returning 'None' instead of a cluster mask.")
         return None
+        
+def getCentroidofMask(DoseMask):
+    locs = np.transpose(np.nonzero(DoseMask))
+    M = moments(DoseMask)
+    centroid = (M[0,1]/M[0,0], M[1,0]/M[0,0]) 
+    return centroid
