@@ -2,7 +2,7 @@
 
 Calculating parameters of a DSM for doselevels between 0 and 60 Gy. 
 
-Calculates the features of a DSM:  
+Calculates parameters describing a DSM:  
 - area: The percent of the total DSM area covered by the doseMask
 - length: The length of the dose mask (superor - inferior) direction 
 - length of full coverage: The length of the DSM that received at least 80% circumferential coverage
@@ -10,7 +10,6 @@ Calculates the features of a DSM:
 - grade_circ: The average percentage of circumference irradiated in a dose mask. 
 - grade_of_circ_max_consecutive: The maximum percentage of circumference irradiated to 1 consecutive cm
 - grade_of_circ_max: The maximum percentage of circumference irradiated to 1 cm
-- 
 """ 
 
 import numpy as np
