@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns; sns.set_theme()
 from Parameters import grad_01, grad_2, grad_3, armA, armB,  All_patients
-from extrahelpers import collectCSVData_Nr2 
+from HelperFunctions import collectCSVData_Nr2 
 
 
 data_circ = collectCSVData_Nr2("C:/Users/hmibe/OneDrive/Dokumenter/Masteroppgave/Data/DSMParameters/Circumference_median.csv")
