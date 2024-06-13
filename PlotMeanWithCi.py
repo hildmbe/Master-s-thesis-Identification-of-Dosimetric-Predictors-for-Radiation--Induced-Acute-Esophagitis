@@ -3,7 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from Parameters import grad_01, grad_2, grad_3, armA, armB, All_patients
-from extrahelpers import collectCSVData, collectCSVData_Nr2 
+from HelperFunctions import collectCSVData, collectCSVData_Nr2 
 import seaborn as sns
 from mne.stats import bootstrap_confidence_interval 
 
