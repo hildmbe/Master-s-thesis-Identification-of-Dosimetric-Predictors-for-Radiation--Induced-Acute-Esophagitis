@@ -1,16 +1,13 @@
 """
-===================================
 
 A program written to check the DICOM RS-files of the patients. 
 
 The program checks for missing slices in the esophagus. 
 It also checks if the CT slice thickness and the voxel size in the z direction are equal or not. 
-
-===================================
 """
 
 import numpy as np
-from extrahelpers import collectCSVData
+from Helperfunctions import collectCSVData
 import os
 from Parameters import All_patients
 from dicompylercore import dicomparser
