@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt 
-from extrahelpers import collectCSVData, get_pointcloud
+from HelperFunctions import collectCSVData, get_pointcloud
 from Parameters import All_patients, grad_01, grad_2, grad_3, armA, armB
 import os
 
