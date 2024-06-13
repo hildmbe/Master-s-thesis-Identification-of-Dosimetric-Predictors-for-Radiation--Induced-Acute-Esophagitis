@@ -7,7 +7,7 @@ It also checks if the CT slice thickness and the voxel size in the z direction a
 """
 
 import numpy as np
-from Helperfunctions import collectCSVData
+from HelperFunctions import collectCSVData
 import os
 from Parameters import All_patients
 from dicompylercore import dicomparser
