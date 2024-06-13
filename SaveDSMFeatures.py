@@ -4,22 +4,20 @@ Calculating parameters of a DSM for doselevels between 0 and 60 Gy.
 
 Calculates the features of a DSM:  
 - area: The percent of the total DSM area covered by the doseMask
-- length: 
+- length: The length of the dose mask (superor - inferior) direction 
 - length of full coverage: The length of the DSM that received at least 80% circumferential coverage
-- areaXdose: The relative area of a dose mask multiplied with the mean dose within that area. 
+- areaXdose: The relative area of a dose mask relative to the size of the DSM multiplied with the mean dose within that area. 
 - grade_circ: The average percentage of circumference irradiated in a dose mask. 
-- grade_of_circ_max_consecutive: 
-- grade_of_circ_max: 
+- grade_of_circ_max_consecutive: The maximum percentage of circumference irradiated to 1 consecutive cm
+- grade_of_circ_max: The maximum percentage of circumference irradiated to 1 cm
 - 
 """ 
 
 import numpy as np
 from Parameters import grad_01, grad_2, grad_3, armA, armB, All_patients
-from extrahelpers import collectCSVData, get_pointcloud, DSM_features
-import matplotlib.pyplot as plt
+from HelperFunctions import collectCSVData, get_pointcloud, DSM_features
 import csv
 import os
-import pyvista as pv
 
 dose_l = np.arange(0, 60, 1)
 
