@@ -4,7 +4,7 @@ The original DSMs (physical dose) were scaled so that only 30 fractions were inc
 and then the result were converted into EQD2 with n=30 fractions. '''
 
 import numpy as np
-from extrahelpers import collectCSVData, get_pointcloud, convertDSMtoEQD2
+from HelperFunctions import collectCSVData, get_pointcloud, convertDSMtoEQD2
 from Parameters import grad_01, grad_2, grad_3, armA, armB, All_patients
 import os
 
