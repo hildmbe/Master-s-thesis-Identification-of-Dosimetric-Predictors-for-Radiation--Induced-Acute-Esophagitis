@@ -4,7 +4,7 @@ the length in the superior - inferior direction will be absolute and not relativ
 """
 
 import numpy as np
-from extrahelpers import rotateHorizontally, rotateVertically, collectCSVData, get_pointcloud
+from HelperFunctions import rotateHorizontally, rotateVertically, collectCSVData, get_pointcloud
 from skimage.transform import resize
 import os
 
