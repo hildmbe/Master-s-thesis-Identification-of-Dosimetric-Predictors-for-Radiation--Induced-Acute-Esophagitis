@@ -110,6 +110,9 @@ for pat_number in All_patients:
         point_of_intersection = int_pt.x, int_pt.y 
 
         # Equiangular rays emerging from the centroid of the spline
+
+        sample_points = np.linspace(0,360, 100)
+        
         for i in sample_points:
             y3 = np.sin(math.radians(i))*(point_of_intersection[0]-centroid[0]) + centroid[1]
             x3 = np.cos(math.radians(i))*(point_of_intersection[0]-centroid[0]) + centroid[0]
